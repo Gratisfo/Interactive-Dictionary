@@ -82,9 +82,6 @@ def output(request, *args, **kwargs):
     }
     return render(request, 'output.html', context)
 
-def about_view(request, *args, **kwargs):
-	about_context = {}
-	return render(request, 'about.html', about_context)
 
 def login_view(request, *args, **kwargs):
 	login_context = {}

@@ -24,7 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('add/', add_word_view),
     path('output/', views.output, name='output'),
-    path('about/', views.about_view, name = 'about'),
     path('accounts/', include('accounts.urls')),
     path('like_category/', like_category, name='like_category'),
     path('dislike_category/', dislike_category, name='dislike_category')

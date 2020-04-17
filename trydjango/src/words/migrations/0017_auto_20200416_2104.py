@@ -27,14 +27,14 @@ class Migration(migrations.Migration):
             name='Like',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('word', models.ForeignKey(on_delete='CASCADE', to='words.Word')),
+                ('word', models.ForeignKey(on_delete=models.CASCADE, to='words.Word')),
             ],
         ),
         migrations.CreateModel(
             name='Dislike',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('dislikes', models.ForeignKey(on_delete='CASCADE', to='words.Word')),
+                ('dislikes', models.ForeignKey(on_delete=models.CASCADE, to='words.Word')),
             ],
         ),
     ]
